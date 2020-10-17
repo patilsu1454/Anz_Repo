@@ -1,0 +1,20 @@
+{
+  "projectId": "hyaoa9",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "env": {
+    "dev": "bar",
+    "test": "https://example.cypress.io",
+    "uat": "uat_env",
+    "prod": "prod_env"
+  }
+}
