@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Sushant",
+        "Address": "Bangalore"
+    },
+    {
+        "Name": "Suprit",
+        "Address": "Belagavi"
+    },
+    {
+        "Name": "Mercury",
+        "Address": "Mysore",
+        "UserName":"mercury",
+        "Password":"mercury"
+    }
+    
+]
