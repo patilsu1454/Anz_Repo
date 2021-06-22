@@ -1,3 +1,4 @@
+import addContext from 'mochawesome/addContext';
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -23,6 +24,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('addContext', (context) => {
+    cy.once('test:after:run', (test) => addContext({ test }, context));
+  });
 
 Cypress.Commands.add("loginCommand", (username, password) => {
     cy.get('input[name=userName]').should('be.enabled').type(username)    // enter username

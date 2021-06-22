@@ -8,12 +8,14 @@
       "quite": true,
       "overwrite": false,
       "html": true,
-      "json": false
+      "json": true
     }
   },
   "env": {
-    "dev": "bar",
+    "url":"URL",
+    "dev": "DevEnv",
     "test": "https://example.cypress.io",
+    "staging": "stg_env",
     "uat": "uat_env",
     "prod": "prod_env"
   }

@@ -23,10 +23,11 @@ describe("My first- test group -Using Page Obects", function(){
       after(function() {
         // runs after each test in the it block
         cy.log("I am in After block")
+        cy.addContext('Test case is PASSED')
         // implement app log out method to invoke in this block
       })
 
-    it("Find a requird flight to travel-using Page objects", function(){
+    it.only("Find a requird flight to travel-using Page objects", function(){
         loginPage.enterUserNameAndPswd('mercury','mercury');
         findflightPage.findArequiredFlight();
         cy.log('This will navigate to next page');
@@ -49,7 +50,7 @@ describe("My first- test group -Using Page Obects", function(){
         
     })
 
-    it.only("Find a requird flight to travel-each", function(){
+    it("Find a requird flight to travel-each", function(){
         loginPage.enterUserNameAndPswd(this.data.username,this.data.password)
         findflightPage.findArequiredFlightWithOptions();
         cy.title().should('eq','Login: Mercury Tours'); 

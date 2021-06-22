@@ -15,9 +15,21 @@ class LoginPage {
     }
 
     visitApp(){
+        cy.addContext(Cypress.env('url'))
         cy.visit('http://demo.guru99.com/test/newtours/index.php') 
         return this;
     }
+
+    // visitAppBasedOnEnv(env){
+    //     if(env.includes("qa"))
+    //     cy.visit(env) 
+        
+    //     else(env.includes("uat"))
+    //     cy.visit(env) 
+        
+    //     cy.log('Tests started executing on environment :'+env)
+    //     return this;
+    // }
     
     enterUserNameAndPswd(username,password){
         this.getUsername().should('be.enabled').type(username); 

@@ -7,6 +7,7 @@ import Utils from '../../integration/utilities/Utils';
 import FindflightPage from '../../support/page_objects/FindflightPage';
 
 const testUserData = require("../../fixtures/dataProviderOne.json")
+require("../../fixtures/domains.json")
 
 testUserData.forEach((user) => {
     describe('Dynamic test data, passed through DataProvider/fixture[array of JSON Objects]', () => {
@@ -17,17 +18,18 @@ testUserData.forEach((user) => {
 
      beforeEach(() => {
         loginPage.visitApp();
-        
+        cy.addContext('Visited the app -PASS ')
         });
+   
 
-    it('display the user details', function () {
+    it.only('display the user details', function () {
    
             cy.log(user.Name);
             cy.log(user.Address);
            
         });
 
-    it.only(`display the user ${user.Name} details`, function () {
+    it(`display the user ${user.Name} details`, function () {
    
             cy.log(user.Name);
             cy.log(user.Address);
