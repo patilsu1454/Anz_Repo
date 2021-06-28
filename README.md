@@ -19,13 +19,13 @@
 10.	To run on any specific browser ex: Chorme, the command is : npx cypress run –spec /users/Sushant/pathofSpecFile/ea.spec.js –browser chrome
  
 # Features 
-1) POM design pattern
-2)Running tests on multiple environments
-3)Data provider-Multiple data set on single test
-4)Combined and individual test case execution report
-5) Mocha unit framework 
-6) Utilities 
-7)UI runner/command line 
-8) CI with Jenkins  Dashboard+Github  
-9) Screenshots/videos of test execution  
-10) Chai assertions type  
+1. POM design pattern
+2. Running tests on multiple environments
+3. Data provider-Multiple data set on single test
+4. Combined and individual test case execution report
+5. Mocha unit framework 
+6. Utilities 
+7. UI runner/command line 
+8. CI with Jenkins  Dashboard+Github  
+9. Screenshots/videos of test execution  
+10. Chai assertions type  
