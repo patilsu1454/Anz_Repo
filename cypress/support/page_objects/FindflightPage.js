@@ -22,7 +22,8 @@ class FindflightPage{
     cy.log('Selecting Passengers & fromPort starting from DropDowns and click on Continue')
     this.ddPassengercount().select('3')                    // dropdown options selecting 
     this.ddFromPort().select('Frankfurt')
-    this.btnFindflihts().should('be.enabled').click();
+    this.btnFindflihts().should('be.enabled')
+    this.btnFindflihts().click()
     }
 
     findArequiredFlightWithOptions(){                          
