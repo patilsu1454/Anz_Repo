@@ -5,16 +5,11 @@
 1. At first make sure you have node.js and visual studio code for source code editor 
 2. Delete the package-lock.json and run the npm install to download the dependencies
 3. Package.json has the set up to run the tests under script tag
-4. To run dev environment tests use below command from the terminal
-  ->npm run devtests
-5. To run qa/test environent tests use below command from the terminal
-  ->npm run qatests
-6. You can find the combined test report of execution at below path
-  CypressSP\cypress\reports\mochareports
-7. You can find the indivisual test cases execution at below path
-  CypressSP\cypress\reports\mocha
-8. Also install all the dev dependcies mentioned in package.json file using below npm command
-  Ex:	npm install cypress --save-dev
+4. To run dev environment tests use below this command from the terminal --> npm run devtests
+5. To run qa/test environent tests use this command from the terminal -->npm run qatests
+6. You can find the combined test report of execution at path --> CypressSP\cypress\reports\mochareports
+7. You can find the indivisual test cases execution at below path --> CypressSP\cypress\reports\mocha
+8. Also install all the dev dependcies mentioned in package.json file using below npm command.  Ex:	npm install cypress --save-dev
 9.	Run command ‘Npx cypress open’ from terminal.Cypress when runs spec files through command line, it runs in headless mode (Default browser is electron)
 10.	To run on any specific browser ex: Chorme, the command is : npx cypress run –spec /users/Sushant/pathofSpecFile/ea.spec.js –browser chrome
  
