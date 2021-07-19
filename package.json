@@ -4,9 +4,9 @@
   "description": "My Project 001",
   "main": "index.js",
   "devDependencies": {
-    "cypress": "^4.12.1",
+    "cypress": "^7.6.0",
     "cypress-multi-reporters": "^1.5.0",
-    "mocha": "^8.4.0",
+    "mocha": "^9.0.2",
     "mocha-multi-reporters": "^1.5.1",
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
@@ -33,5 +33,12 @@
   "bugs": {
     "url": "https://github.com/patilsu1454/CypressSP/issues"
   },
-  "homepage": "https://github.com/patilsu1454/CypressSP#readme"
+  "homepage": "https://github.com/patilsu1454/CypressSP#readme",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.1.4"
+  },
+  
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
 }
