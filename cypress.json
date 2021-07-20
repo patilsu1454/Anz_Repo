@@ -1,5 +1,5 @@
 {
-  "projectId": "hyaoa9",
+  "projectId": "p94z49",
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "reporterEnabled": "mochawesome",
@@ -12,7 +12,7 @@
     }
   },
   "env": {
-    "url":"URL",
+    "url": "URL",
     "dev": "DevEnv",
     "test": "https://example.cypress.io",
     "staging": "stg_env",
