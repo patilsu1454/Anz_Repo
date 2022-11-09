@@ -28,10 +28,16 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patilsu1454/CypressSP.git"  
+    "url": "git+https://github.com/patilsu1454/CypressSP.git"
   },
   "bugs": {
     "url": "https://github.com/patilsu1454/CypressSP/issues"
   },
-  "homepage": "https://github.com/patilsu1454/CypressSP#readme"
+  "homepage": "https://github.com/patilsu1454/CypressSP#readme",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.1.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
 }
